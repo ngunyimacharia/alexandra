@@ -1,0 +1,136 @@
+$eerie_black: #191919;
+$pastel_grey: #ced0ce;
+$platinum: #e6e8e6;
+$white: #ffffff;
+$flame: #f15025;
+$shadow_blue: #7293a0;
+$header_height: 60px;
+
+body{
+  margin: $header_height 0 0 !important;
+  color:#333;
+  background-color: $platinum;
+}
+
+.content-container{
+  width: 80vw;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0;
+  min-height: 80vh;
+}
+
+.heading-section{
+  background-color: $pastel_grey;
+  padding: 40px;
+
+  h1{
+    font-size: 1.3em;
+    text-transform: uppercase;
+  }
+
+  .description{
+    padding: 10px 0 20px;
+    font-size: 0.8em;
+  }
+
+  .actions{
+    a{
+      background-color: transparent;
+      border:1px solid rgba(0,0,0,0.4);
+      border-radius: 1px;
+      color: rgba(0,0,0,0.6);
+      font-size: 0.9em;
+      padding: 4px 10px;
+      text-decoration: none;
+    }
+  }
+
+}
+
+.body-section{
+  padding: 20px 40px;
+}
+
+
+form{
+  clear: both;
+  max-width: 600px;
+  margin: 0 auto;
+
+  label{
+    display: block;
+    font-weight: 500;
+    font-size: 0.9em;
+    padding: 5px 0;
+  }
+
+  input, select{
+    width:100%;
+    margin: 0;
+    padding: 5px;
+    background-color: transparent;
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius: 2px;
+  }
+
+  input[type="radio"]{
+    width: auto !important;
+    margin: 10px 20px;
+  }
+
+  .form-group{
+    margin: 20px 0;
+  }
+
+  button{
+    margin: 10px 0;
+  }
+}
+
+
+table{
+  width:100%;
+  margin:0;
+  border-radius: 25px;
+  overflow: hidden;
+  border:1px solid #ccc;
+  background-color: #6c7ae0;
+  border-spacing: 0;
+  border-collapse: separate;
+
+  thead{
+    background-color: #6c7ae0;
+    th{
+      text-align: left;
+      color: #fff;
+      padding: 20px 8px;
+      background-color: #6c7ae0;
+      margin:0;
+      border: 0;
+    }
+  }
+  tbody{
+    background: white;
+
+    tr{
+      td{
+        padding: 20px 8px;
+        text-align: left;
+        color:#666666;
+        margin:0;
+        border: 0;
+        border-bottom:1px solid #ddd;
+      }
+    }
+
+  }
+}
+
+.muted{
+  font-size: 0.8em;
+}
+
+.text-center{
+  text-align:center;
+}

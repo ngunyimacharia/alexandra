@@ -1,5 +1,4 @@
 allow-deny@1.1.0
-autopublish@1.0.7
 autoupdate@1.4.1
 babel-compiler@7.1.1
 babel-runtime@1.2.7
@@ -32,8 +31,8 @@ html-tools@1.0.11
 htmljs@1.0.11
 http@1.4.1
 id-map@1.1.0
-insecure@1.0.7
 jquery@1.11.11
+juliancwirko:s-alert@3.2.0
 kadira:blaze-layout@2.3.0
 kadira:flow-router@2.12.1
 launch-screen@1.1.1
@@ -62,6 +61,7 @@ reactive-var@1.0.11
 reload@1.2.0
 retry@1.1.0
 routepolicy@1.0.13
+session@1.1.8
 shell-server@0.3.1
 socket-stream-client@0.2.2
 spacebars@1.0.15

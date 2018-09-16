@@ -1,0 +1,62 @@
+<template name="Eit_data_edit_form">
+  {{#with eit}}
+  <form>
+    <div class='form-group'>
+      <label for="first_name">First name:</label>
+      <input type="text" name="first_name" id="first_name" value="{{eit.first_name}}" required />
+    </div>
+    <div class='form-group'>
+      <label for="last_name">Last name:</label>
+      <input type="text" name="last_name" id="last_name" value = "{{eit.last_name}}" required/>
+    </div>
+    <div class='form-group'>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" name="dob" id="dob" value="{{eit.dob}}" required/>
+    </div>
+    <div class='form-group'>
+      <label for="country">Country</label>
+      <select name="country" required>
+        {{#each countries}}
+        {{#if defaultCountry name}}
+        <option value="{{name}}" selected="true">{{name}}</option>
+        {{else}}
+        <option value="{{name}}">{{name}}</option>
+        {{/if}}
+        {{/each}}
+      </select>
+    </div>
+    <div class='form-group'>
+      <label for="gender">Gender</label>
+      {{#if defaultGender 'Male'}}
+        <input type="radio" name="gender" value="Male" checked="true" required>Male
+      {{else}}
+        <input type="radio" name="gender" value="Male" required>Male
+      {{/if}}
+      {{#if defaultGender 'Female'}}
+        <input type="radio" name="gender" value="Female" checked="true" required>Female
+      {{else}}
+        <input type="radio" name="gender" value="Female" required>Female
+      {{/if}}
+    </div>
+    <div class='form-group'>
+      <label for="cohort">Cohort (Year of graduation)</label>
+      <select name="cohort" required>
+        {{#each years}}
+
+          {{#if defaultYear year}}
+            <option value = "{{year}}" selected="true">{{year}}</option>
+          {{else}}
+            <option value = "{{year}}">{{year}}</option>
+          {{/if}}
+
+        {{/each}}
+      </select>
+    </div>
+    <div class='form-group'>
+      <span class="muted">*All fields are compulsory</span>
+      <br/>
+      <button>Submit</button>
+    </div>
+  </form>
+  {{/with}}
+</template>

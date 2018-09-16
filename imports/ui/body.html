@@ -4,30 +4,7 @@
 
 <template name="App_body">
   {{> Template.dynamic template=header}}
-  {{> Template.dynamic template=main}}
-</template>
-
-<template name="Eit_data_form">
-  <form>
-    <label for="first_name">First name:</label>
-    <input type="text" name="first_name" id="first_name"/>
-    <br/>
-    <label for="last_name">Last name:</label>
-    <input type="text" name="last_name" id="last_name"/>
-    <br/>
-    <label for="dob">Date of Birth:</label>
-    <input type="text" name="dob" id="dob" />
-    <br/>
-    <label for="country">Country</label>
-    <select>Select Country</select>
-    <br/>
-    <label for="gender">Gender</label>
-    <input type="radio" name="gender">Male
-    <input type="radio" name="gender">Female
-    <br/>
-    <label for="cohort">Cohort</label>
-    <select>Select Cohort Year</select>
-    <br/>
-    <button>Submit</button>
-  </form>
+  <div class="content-container">
+    {{> Template.dynamic template=main}}
+  </div>
 </template>

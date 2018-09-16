@@ -1,5 +1,153 @@
+body {
+  margin: 60px 0 0 !important;
+  color: #333;
+  background-color: #e6e8e6;
+}
+
+.content-container {
+  width: 80vw;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0;
+  min-height: 80vh;
+}
+
+.heading-section {
+  background-color: #ced0ce;
+  padding: 40px;
+}
+.heading-section h1 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+.heading-section .description {
+  padding: 10px 0 20px;
+  font-size: 0.8em;
+}
+.heading-section .actions a {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 1px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.9em;
+  padding: 4px 10px;
+  text-decoration: none;
+}
+
+.body-section {
+  padding: 20px 40px;
+}
+
+form {
+  clear: both;
+  max-width: 600px;
+  margin: 0 auto;
+}
+form label {
+  display: block;
+  font-weight: 500;
+  font-size: 0.9em;
+  padding: 5px 0;
+}
+form input, form select {
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+}
+form input[type=radio] {
+  width: auto !important;
+  margin: 10px 20px;
+}
+form .form-group {
+  margin: 20px 0;
+}
+form button {
+  margin: 10px 0;
+}
+
+table {
+  width: 100%;
+  margin: 0;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #6c7ae0;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+table thead {
+  background-color: #6c7ae0;
+}
+table thead th {
+  text-align: left;
+  color: #fff;
+  padding: 20px 8px;
+  background-color: #6c7ae0;
+  margin: 0;
+  border: 0;
+}
+table tbody {
+  background: white;
+}
+table tbody tr td {
+  padding: 20px 8px;
+  text-align: left;
+  color: #666666;
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.muted {
+  font-size: 0.8em;
+}
+
+.text-center {
+  text-align: center;
+}
+
 header {
   width: 100%;
+  background-color: #191919;
+  height: 60px;
+  position: fixed;
+  top: 0;
+}
+header nav {
+  display: inline-block;
+  height: 100%;
+}
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+header nav ul li {
+  display: inline-block;
+  height: 100%;
+  overflow: hidden;
+}
+header nav ul li a {
+  color: #b1b3be;
+  text-decoration: none;
+  padding: 20px 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.8em;
+  height: 100%;
+  display: inline-block;
+}
+header nav ul .logo a {
+  color: #fff !important;
+  background: #f15025;
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */

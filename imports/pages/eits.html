@@ -1,3 +1,47 @@
 <template name="Eits_page">
-  <h1>EiTs</h1>
+  <div class="heading-section">
+    <h1>All EiTs</h1>
+    <div class="description">
+      Section to view all EiTs
+    </div>
+    <div class="actions">
+      <a href="/eits/add">Add New EiT</a>
+    </div>
+  </div>
+  <div class="body-section">
+    <table class="eits-table">
+      <thead>
+        <tr>
+          <th></th>
+          <!-- <th>#</th> -->
+          <th>Full Name</th>
+          <th>Gender</th>
+          <th>Date of Birth</th>
+          <th>Country</th>
+          <th>Cohort</th>
+          <th></th>
+      </tr>
+      </thead>
+      <tbody>
+        {{#each eits}}
+          <tr>
+            <td>
+              <input type="checkbox" />
+            </td>
+            <!-- <td>{{ @index+1 }}</td> -->
+            <td>{{ first_name }}&nbsp;{{ last_name }}</td>
+            <td>{{ gender }}</td>
+            <td>{{ dob }}</td>
+            <td>{{ country }}</td>
+            <td class="text-center">{{ cohort }}</td>
+            <td><a href="/eits/edit/{{ _id }}">Update</a></td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</template>
+
+<template name="Eit_list_name">
+  <td>{{ first_name }}</td>
 </template>
