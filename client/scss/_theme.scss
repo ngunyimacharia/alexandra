@@ -10,8 +10,12 @@ body{
   margin: $header_height 0 0 !important;
   color:#333;
   background-color: $platinum;
+  font-family: Georgia, serif;
 }
 
+h1,h2,h3,h4,h5,h6{
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
 .content-container{
   width: 80vw;
   margin: 0 auto;
@@ -50,6 +54,7 @@ body{
 
 .body-section{
   padding: 20px 40px;
+  font-size:0.9em;
 }
 
 
@@ -121,6 +126,15 @@ table{
         margin:0;
         border: 0;
         border-bottom:1px solid #ddd;
+
+        a{
+          text-decoration: none;
+        }
+      }
+
+      &:hover{
+        background-color: #ececff;
+        cursor:pointer;
       }
     }
 
@@ -133,4 +147,17 @@ table{
 
 .text-center{
   text-align:center;
+}
+
+.btn-border{
+  background: transparent;
+  color:#444;
+  font-weight: 500;
+  border:1px solid #444;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+
+.padding{
+  padding:20px;
 }

@@ -26,7 +26,7 @@
         {{#each eits}}
           <tr>
             <td>
-              <input type="checkbox" />
+              <input type="checkbox" class="delete-checkbox" value="{{_id}}"/>
             </td>
             <!-- <td>{{ @index+1 }}</td> -->
             <td>{{ first_name }}&nbsp;{{ last_name }}</td>
@@ -34,11 +34,19 @@
             <td>{{ dob }}</td>
             <td>{{ country }}</td>
             <td class="text-center">{{ cohort }}</td>
-            <td><a href="/eits/edit/{{ _id }}">Update</a></td>
+            <td><a href="/eits/edit/{{ _id }}"><i class="fa fa-edit"></i> Edit</a></td>
           </tr>
         {{/each}}
       </tbody>
     </table>
+    <br/>
+    <div class="padding">
+      Bulk Actions&nbsp;:&nbsp;&nbsp;
+      <button class="btn-border" id="deleteEit">
+        <i class="fa fa-trash"></i>
+        Delete
+      </button>
+    </div>
   </div>
 </template>
 

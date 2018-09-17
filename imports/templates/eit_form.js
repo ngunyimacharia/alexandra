@@ -27,6 +27,7 @@ Template.Eit_data_form.helpers({
 
 });
 
+
 Template.Eit_data_form.events({
   'submit form'(event){
     event.preventDefault();
@@ -39,6 +40,11 @@ Template.Eit_data_form.events({
       cohort: event.target.cohort.value,
     };
     Meteor.call('eits.insert',eit_data);
+    swal({
+      title:'Hurray!!',
+      text:'The EiT has been successfully added!',
+      type:'success'
+    });
     FlowRouter.go('/eits');
   }
 });

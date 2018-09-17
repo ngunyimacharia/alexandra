@@ -19,4 +19,5 @@ shell-server@0.3.1            # Server-side component of the `meteor shell` comm
 
 kadira:flow-router
 kadira:blaze-layout
-juliancwirko:s-alert
+fortawesome:fontawesome
+cleandersonlobo:sweetalert2

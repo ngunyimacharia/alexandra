@@ -80,6 +80,11 @@ Template.Eit_data_edit_form.events({
       cohort: event.target.cohort.value,
     };
     Meteor.call('eits.update', eitId ,eit_data);
+    swal({
+      title:'Hurray!!',
+      text:'The EiT has been successfully updated!',
+      type:'success'
+    });
     FlowRouter.go('/eits');
   }
 });
