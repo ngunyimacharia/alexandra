@@ -2,8 +2,14 @@
   #login-sign-in-link{
     display: none;
   }
-  
+
   .login-close-text{
     display: none;
+  }
+
+  .additional-link-container{
+    a{
+      color:blue;
+    }
   }
 }

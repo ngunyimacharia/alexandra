@@ -8,12 +8,14 @@
         <li>
           <a href="/eits">All EiTs</a>
         </li>
-        <!-- <li>
-          <a href="/cohorts">Cohorts</a>
-        </li>
         <li>
-          <a href="/countries">Countries</a>
-        </li> -->
+          <a href="/users">All Users</a>
+        </li>
+        {{#with currentUser}}
+          <li class="logout">
+            <a href="/logout">Logout ({{currentUser.username}}) </a>
+          </li>
+        {{/with}}
       </ul>
     </nav>
   </header>
@@ -24,10 +26,10 @@
     <nav>
       <ul>
         <li class="logo">
-          <a href="/login">Alexandra</a>
+          <a href="/">Alexandra</a>
         </li>
         <li>
-          <a href="/login">Login</a>
+          <a href="/login">Login / Signup</a>
         </li>
       </ul>
     </nav>

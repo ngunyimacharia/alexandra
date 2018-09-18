@@ -1,0 +1,30 @@
+<template name="Users_page">
+  <div class="heading-section">
+    <h1>All Users</h1>
+    <div class="description">
+      Section to user accounts within the system
+    </div>
+  </div>
+  <div class="body-section">
+    {{#with users}}
+    <table class="eits-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Username</th>
+          <th>Signup Date</th>
+      </tr>
+      </thead>
+      <tbody>
+        {{#each users}}
+        <tr>
+          <td></td>
+          <td>{{username}}</td>
+          <td>{{createdAt}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    {{/with}}
+  </div>
+</template>
