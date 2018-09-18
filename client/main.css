@@ -2,6 +2,11 @@ body {
   margin: 60px 0 0 !important;
   color: #333;
   background-color: #e6e8e6;
+  font-family: Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 .content-container {
@@ -127,7 +132,7 @@ table tbody tr:hover {
 }
 
 .padding {
-  padding: 10px;
+  padding: 20px;
 }
 
 header {
@@ -169,6 +174,13 @@ header nav ul .logo a {
   font-style: italic;
   font-weight: normal;
   font-size: 1em;
+}
+
+#login-buttons #login-sign-in-link {
+  display: none;
+}
+#login-buttons .login-close-text {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
