@@ -3,7 +3,7 @@ import { gql } from 'apollo-server-express'
 const typeDefs = gql`
 type Query{
   getEITs: [EIT],
-  getOneEIT(id:String): [EIT]
+  getOneEIT(id:String): EIT
 }
 type Mutation{
   addEIT(
