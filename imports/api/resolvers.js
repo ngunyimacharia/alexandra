@@ -7,6 +7,7 @@ const resolvers = {
       return Eits.find({}).fetch();
     },
     getOneEIT(_,args){
+      console.log(args);
       return Eits.findOne(args.id);
     }
   },
@@ -39,8 +40,7 @@ const resolvers = {
       return Eits.findOne(args.id);
     },
     deleteEIT(_,args){
-      Eits.remove(args.id);
-      return args.id;
+      return Eits.remove(args.id);
     }
   }
 }

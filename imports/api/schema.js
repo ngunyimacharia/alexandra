@@ -13,7 +13,7 @@ type Mutation{
     country: String,
     gender: String,
     cohort: String
-  ): [EIT],
+  ): EIT,
   updateEIT(
     id: String,
     first_name: String,
@@ -22,10 +22,10 @@ type Mutation{
     country: String,
     gender: String,
     cohort: String
-  ): [EIT],
+  ): EIT,
   deleteEIT(
     id:String
-  ): [String]
+  ): Int
 }
 type EIT {
   _id: String,
