@@ -6,7 +6,7 @@ const resolvers = {
     getEITs(){
       return Eits.find({}).fetch();
     },
-    getEIT(_,args){
+    getOneEIT(_,args){
       return Eits.findOne(args.id);
     }
   },
