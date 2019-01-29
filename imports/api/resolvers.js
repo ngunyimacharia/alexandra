@@ -12,7 +12,7 @@ const resolvers = {
   },
   Mutation:{
     addEIT(_,args){
-      Eits.insert({
+      let eitId = Eits.insert({
         first_name:args.first_name,
         last_name:args.last_name,
         dob:args.dob,
@@ -20,6 +20,7 @@ const resolvers = {
         gender:args.gender,
         cohort:args.cohort
       });
+      return Eits.findOne(eitId);
     },
     updateEIT(_,args){
       Eits.update(
@@ -35,9 +36,11 @@ const resolvers = {
           }
         }
       );
+      return Eits.findOne(args.id);
     },
     deleteEIT(_,args){
       Eits.remove(args.id);
+      return args.id;
     }
   }
 }
